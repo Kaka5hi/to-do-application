@@ -1,0 +1,179 @@
+*::before,
+*,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: bisque;
+    padding: 20px;
+}
+
+/* main container */
+.container {
+    background-color: white;
+    max-width: 768px;
+    /* min-height: 500px; */
+    margin: auto;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.container > h1 {
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* input container */
+
+.input-container {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.input-container > input {
+    outline: none;
+    border: 1px solid rgb(218, 218, 218);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.input-container > input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.input-container button {
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(218, 218, 218);
+    color: black;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color: rgb(228, 227, 227);
+}
+.error-tag {
+    text-align: center;
+    color: tomato;
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+
+/* task container */
+.task-container {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.single-task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.single-task > p {
+    font-size: 16px;
+    max-width: 450px;
+    padding-left: 10px;
+    overflow-wrap: anywhere;
+}
+
+.single-task .action-btns {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.single-task .action-btns span {
+    text-transform: capitalize;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.single-task .action-btns button {
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: transparent;
+    color: black;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.single-task .action-btns button:nth-child(2):hover {
+    background-color: tomato;
+    color: white;
+}
+
+.single-task .action-btns button:nth-child(3):hover {
+    background-color: rgb(59, 207, 59);
+    color: white;
+}
+
+.no-task-warning {
+    text-align: center;
+    color: rgb(169, 169, 169);
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+/* for screen size small than 500px */
+@media screen and (max-width: 500px) {
+    .single-task {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .single-task .action-btns {
+        padding-left: 10px;
+    }
+}
+
+/* for screen size small than 375px */
+@media screen and (max-width: 375px) {
+    .single-task {
+        padding: 20px;
+    }
+
+    .single-task > p,
+    .single-task .action-btns {
+        padding-left: 0px;
+    }
+}
