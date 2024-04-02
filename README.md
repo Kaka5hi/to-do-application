@@ -24,12 +24,12 @@ Welcome to To-Do application built with React and Redux! This application is des
 This command will start the development server. Open your browser and navigate to http://localhost:3000 to view the application.
 
 ## Usage
-- **Adding a Task**:To add a new task, simply type your task in the input field and press Enter.
-- **Completing a Task**:Click on the checkbox icon to mark it as completed.
-- **Delete a Task**:Click on the delete icon to delete a task.
+- **Adding a Task**: To add a new task, simply type your task in the input field and press Enter.
+- **Completing a Task**: Click on the checkbox icon to mark it as completed.
+- **Delete a Task**: Click on the delete icon to delete a task.
 
 ## Technolog Used
-- **React**:JavaScript library for building user interfaces.
+- **React**: JavaScript library for building user interfaces.
 - **Redux**: Predictable state container for JavaScript applications.
 
 ## Live project link
